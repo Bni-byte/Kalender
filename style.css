@@ -1,0 +1,235 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+header{
+    background-color: burlywood;
+    height: 3%;
+    width: 100%;
+}
+#timeview{
+    background-color: rgb(255, 255, 255);
+    height: 93vh;
+    width: 100%;
+}
+#timeviewInhalt{
+    background-color: #8a2be2;
+    width: 100%;
+    height: 0%;
+    transition: height 1s;
+}
+
+span{
+    width: 98%;
+}
+article{
+    height: 90vh;
+}
+input{
+    margin-top: 10px;
+    height: 50px;
+    width: 99%;
+    border-radius: 10px;
+    border: none;
+    background-color: #aeaeae;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+input:focus{outline: none;}
+::placeholder {color: white;}
+#hauptbereich{
+    /*flex-direction: column-reverse;*/
+    justify-content: flex-start;
+    height: 97%;
+    background-color: #e8d1ff
+}
+
+#auswahlHintergrund{
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.821);
+    height: 100%;
+    width: 100%;
+    
+}
+.absendeButton{
+    margin-top: 10px;
+    height: 50px;
+    width: 48%;
+    border-radius: 10px;
+    border: none;
+    margin-left: 1%;
+}
+#auswahl{
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+#absendeBereiche{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*#neuesElements{
+    position: absolute;
+    margin-top: 93vh;
+    margin-left: 84%;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
+}*/
+
+#neuesElement{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    opacity: 0.5;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+}
+
+#anzeigeZurücksetzen{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    opacity: 0.5;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+}
+
+#anzeigeAlles{
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    z-index: 999;
+    opacity: 0.5;
+    background-color: blueviolet;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+}
+
+.blöcke{
+    background-color: rgb(255, 0, 0);
+    width: 2%;
+    position: absolute;
+}
+.ereignisse{
+    position: absolute;
+    list-style-type: none;
+    font-size: 13px;
+    background-color: chocolate;
+    border-style: solid;
+    border-width: 1px;
+    width: 12.6%;
+}
+#liste{
+    list-style-type: none;
+    background-color: #e2c6fd;
+    position: absolute;
+    /*left: -1000px;*/
+    transition: left 2s;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+th{
+    background-color: lightgreen;
+    height: 3%;
+    width: 12%;
+}
+
+td{
+    background-color: rgb(13, 159, 8);
+    height: 100%;
+    width: 12%;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/*li{
+    background-color: chocolate;
+    border-style: solid;
+    border-width: 1px;
+}*/
+#farbeEreignisse{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ereignisseAnzeigen{
+    list-style-type: none;
+    font-size: 20px;
+    background-color: rgb(61, 61, 61);
+}
+.zeit{
+    color: rgb(255, 255, 255);
+}
+.betreffAnzeige{
+    background-color: bisque;
+}
+
+#timepufferview{
+    height: 96%;
+    width: 2%;
+    display: flex;
+    flex-direction: column;
+}
+#puffer{
+    background-color: #ffffff;
+    height: 6.9%;
+    width: 100%;
+}
+
+#zeitTeiler06{
+    position: absolute;
+    width: 98%;
+    height: 26.8%;
+    border-bottom: solid;
+    border-color: aqua;
+}
+#zeitTeiler12{
+    position: absolute;
+    width: 98%;
+    height: 50.1%;
+    border-bottom: solid;
+    border-color: aqua;
+}
+#zeitTeiler18{
+    position: absolute;
+    width: 98%;
+    height: 73.5%;
+    border-bottom: solid;
+    border-color: aqua;
+}

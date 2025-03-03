@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+  <title>JSR</title>
+</head>
+<body>
+
+<div id="timepufferview">
+  <div id="puffer"></div>
+  <div id="timeview"><div id="timeviewInhalt"></div></div>
+</div>
+
+  <span>
+    <header id="date"></header>
+    <article id="hauptbereich">
+      <table>
+        <div id="zeitTeiler06"></div>
+        <div id="zeitTeiler12"></div>
+        <div id="zeitTeiler18"></div>
+        <tr>
+          <th id="tag1"></th>
+          <th id="tag2"></th>
+          <th id="tag3"></th>
+          <th id="tag4"></th>
+          <th id="tag5"></th>
+          <th id="tag6"></th>
+          <th id="tag7"></th>
+        </tr>
+        <tr>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse1"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse2"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse3"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse4"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse5"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse6"></ul></div></td>
+          <td><div id="farbeEreignisse"><ul id="tagEreignisse7"></ul></div></td>
+        </tr>
+      </table>
+    </article>
+    <button id="neuesElement" onclick="auswahlFenster1()">+</button>
+    <button id="anzeigeAlles" onclick="auswahlFenster2()">=</button>
+
+  </span>
+
+
+  <div id="auswahlHintergrund">
+    <div id="auswahl">
+      <input type="text" id="betreff" placeholder="Ereignis..."><br>
+      <input type="date" id="datum"><br>
+      <div id="absendeBereiche">
+        <input type="time" id="startZeit">
+        <input type="time" id="endZeit">
+      </div><br>
+      <div id="absendeBereiche">
+        <button class="absendeButton" id="ok" onclick="hinzufügen()">OK</button>
+        <button class="absendeButton" id="abbruch" onclick="zurücksetzen1()">Abbruch</button>
+      </div>
+    </div> 
+  </div>
+
+  <script>
+    date();
+    tabelle();
+  </script>
+</body>
+</html>
